@@ -1,4 +1,4 @@
-/* Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   background: linear-gradient(135deg, #ffe6f0 0%, #e6ccff 100%);
 }
 
-/* Container & Layout */
+
 .container {
   min-height: 100vh;
   padding: clamp(1rem, 3vw, 2rem);
@@ -23,7 +23,6 @@ body {
   overflow: hidden;
 }
 
-/* Background Hearts Animation */
 .background-hearts {
   position: absolute;
   top: 0;
@@ -52,7 +51,6 @@ body {
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
-/* Envelope System */
 .envelope {
   position: relative;
   width: clamp(250px, 80vw, 380px);
@@ -62,7 +60,6 @@ body {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Envelope Texture (External Link Maintained) */
 .body, .flap {
   position: absolute;
   width: 100%;
@@ -72,11 +69,9 @@ body {
   box-shadow: inset 0 0 15px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* If textures fail to load */
 @media (prefers-reduced-motion: no-preference) {
   .body, .flap {
-    background-color: #f9f3f3; /* Solid fallback */
-  }
+    background-color: #f9f3f3; 
 }
 
 .body {
@@ -147,8 +142,6 @@ body {
   transform: translateX(-50%) scale(1.05);
 }
 
-/* Paper Content */
-/* Paper Texture (External Link Maintained) */
 .paper {
   position: absolute;
   top: 50%;
@@ -165,14 +158,13 @@ body {
   cursor: pointer;
 }
 
-/* If textures fail to load */
 @media (prefers-reduced-motion: no-preference) {
   .paper {
-    background-color: #fffefc; /* Solid fallback */
+    background-color: #fffefc; 
   }
 }
 
-/* Confetti Animation */
+
 .paper::before,
 .paper::after {
   content: '';
@@ -204,7 +196,7 @@ body {
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
-/* Content Styling */
+
 .content {
   text-align: center;
   max-width: 90%;
@@ -270,7 +262,7 @@ h1 {
   transform: scale(1.02);
 }
 
-/* Hearts */
+
 .hearts {
   position: relative;
   height: clamp(1.5rem, 5vw, 3rem);
@@ -317,7 +309,6 @@ h1 {
   transform: translateX(50%);
 }
 
-/* Message */
 .personal-message {
   font-size: clamp(0.9rem, 3vw, 1.25rem);
   color: #333;
@@ -357,7 +348,6 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* Signature */
 .signature {
   margin: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(1rem, 2vw, 1.5rem);
   text-align: right;
@@ -382,7 +372,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 480px) {
   .personal-message {
     padding: 0 0.5rem;
@@ -441,7 +430,6 @@ h1 {
   }
 }
 
-/* Landscape Mode */
 @media (orientation: landscape) and (max-height: 600px) {
   .container {
     padding: 1rem;
