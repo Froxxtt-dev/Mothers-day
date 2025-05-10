@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Mother's Day</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="background-hearts">
+      <div class="heart-bg heart-bg-1"></div>
+      <div class="heart-bg heart-bg-2"></div>
+      <div class="heart-bg heart-bg-3"></div>
+    </div>
+    <div class="envelope" onclick="toggleEnvelope(true)">
+      <div class="flap">
+        <div class="dear-mom">Dear Mom</div>
+      </div>
+      <div class="body">
+        <div class="stamp">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <div class="peek-message">Click to open</div>
+      </div>
+    </div>
+    <div class="paper" onclick="toggleEnvelope(false)">
+      <div class="content">
+        <div class="header">
+          <img src="assets/memory-photo.jpg" alt="A cherished photo of me, Mom, and a family member smiling together in elegant outfits" class="memory-photo">
+          <h1>Happy Mother's Day!</h1>
+        </div>
+        <div class="hearts">
+          <svg class="heart-left" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <svg class="heart-right" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <div class="personal-message">
+          <p>Words will never be enough to express how deeply grateful I am for you. Your love, strength, patience, and unwavering support have shaped me in more ways than I can count. You've been my rock, my comfort, and my greatest blessing.</p>
+          <p>Thank you for all the sacrifices you've made and the endless love you've poured into me. I see it in the little things, the big things, and everything in between. You've taught me how to love, how to endure, and how to believe in myself.</p>
+          <p>Today and always, I celebrate you.<br>I love you more than words can ever say.</p>
+        </div>
+        <div class="signature">
+          <p>With all my love,</p>
+          <div class="signature-image">Your Name</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
